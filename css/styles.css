@@ -1,0 +1,95 @@
+h1{
+    color: brown;
+}
+
+p.welcome{
+    
+    color: chocolate;
+}
+p.grout{
+    color: crimson;
+
+}
+body{ background-color: dimgrey;
+
+}
+
+h1.prout{
+    font-size: 100px;
+}
+
+.baton1 {
+    width: 500px;
+    background-color: rgb(52, 132, 206);
+    border-radius: 15px;
+    border-style: solid 1px;
+    box-shadow: ivory 2px;
+}
+.img1 {
+    width: 400px;
+    transition: width 2s, height 2s, transform 2s;
+    margin-left: 50px;
+    border-style: solid 1px;
+}
+.img1:hover {
+    transform: rotate(360deg);
+    width: 500px;
+    margin-left: unset;
+}
+h4 {
+    text-align: center;
+}
+
+
+/*.baton1 {
+    transition: width 2s, height 2s;
+}
+.baton1:hover {
+    width: 600px;
+}
+*/
+.img2 {
+    border-style: solid 1px;
+    width: 400px;
+    transition: width 2s, height 2s, transform 2s;
+    margin-left: 50px;
+    height: 223px;
+}
+.img2:hover {
+  width: 100%;
+  transform: rotate(360deg);
+  margin-left: unset;
+
+}
+.baton2 {
+    width: 500px;
+    background-color: rgb(52, 132, 206);
+    border-radius: 15px;
+    border-style: solid 1px;
+    box-shadow: ivory 2px;  
+}
+.baton3{
+    width: 500px;
+    height: 500px;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+}
+.img3 {
+    animation-name: simpAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes simpAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 100%) rotate(180deg) scale(1.5);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
