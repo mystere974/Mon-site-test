@@ -77,25 +77,23 @@ h4 {
     width: 100%;
     height: 100%;
 }
+
+/* J'ai trouvé comment faire faire une rotation infinie à une image*/
 .img3 {
-    animation-name: simpAnimation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-/*
-@keyframes simpAnimation {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    50% {
-        transform: translate(0px, 100%) rotate(360deg) scale(1.5);
-    }
-    100% {
-        transform: translate(0px, 0px) rotate(0deg);
-    }
+    animation: spin 2s linear 0s infinite;
+    animation-duration: 4s;
+    
 }
 
-*/
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+
+}}
+/*Voila qui conclu la minip*/
 
 .img4{
     animation-duration: 2s;
@@ -108,7 +106,7 @@ h4 {
         transform: translate(0px, 0px);
     }
     to{
-        transform: translate(0px, 100%) rotate(360deg);
+        transform: translate(0px, 100%) rotateX(360deg);
     }
     
 }
