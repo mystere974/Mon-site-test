@@ -43,9 +43,6 @@ body{ background-color: dimgrey;
 
 }
 
-h1.prout{
-    font-size: 100px;
-}
 
 .baton1 {
     width: 500px;
@@ -89,7 +86,7 @@ h4 {
     margin-left: unset;
     transform: rotate(360deg);
     
-
+    
 }
 .baton2 {
     width: 500px;
@@ -106,7 +103,11 @@ h4 {
     width: 100%;
     height: 100%;
 }
-
+.prout{
+animation-name: titre;
+animation-duration: 4s;
+font-size: 100px;
+}
 /* J'ai trouvé comment faire faire une rotation infinie à une image*/
 .img3 {
     animation: spin 2s linear 0s infinite;
@@ -120,12 +121,12 @@ h4 {
     }
     100% {
         transform: rotate(360deg);
-
-}}
-/*Voila qui conclu la minip*/
-
-.img4{
-    animation-duration: 2s;
+        
+    }}
+    /*Voila qui conclu la minip*/
+    
+    .img4{
+        animation-duration: 2s;
     animation-name: rotation;
     animation-iteration-count: infinite;
 }
@@ -139,3 +140,20 @@ h4 {
     }
     
 }
+
+@keyframes titre {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+      50% {
+        font-size: 300%;
+        margin-left: 50%;
+        width: 150%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
